@@ -105,11 +105,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%    TITLE    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\MyLogo
-\begin{center}
-% \includegraphics[height=1.5cm, angle=0]{unipd}
-  \titlepage
-\end{center}
+	\MyLogo
+	\begin{center}
+		% \includegraphics[height=1.5cm, angle=0]{unipd}
+		\titlepage
+	\end{center}
 \end{frame}
 
 %%%% TOC
@@ -125,27 +125,66 @@
 \section{GIT}
 
 \begin{frame}
-%\transblindshorizontal
-% type of transition effect
+	%\transblindshorizontal
+	% type of transition effect
 
-\includegraphics[height=300px]{why-git.png}
+	\includegraphics[height=300px]{why-git.png}
 \end{frame}
 
 \begin{frame}
-\includegraphics{rebase.png}
+	\includegraphics[height=250px,width=300px]{git-checkout.png}
+\end{frame}
+
+\begin{frame}
+	\includegraphics{rebase.png}
 \end{frame}
 
 \begin{frame}
 	\includegraphics[height=250px,width=300px]{bisect-overview.png}
 \end{frame}
+
+\begin{frame}
+	\includegraphics[height=250px,width=300px]{cherry-pick.jpg}
+\end{frame}
+
+\begin{frame}
+	\includegraphics[height=250px,width=300px]{git-stash.png}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{git clean}
+		\begin{itemize}
+			\item git clean -f     \# remove untracked files
+			\item git clean -fd    \# remove untracked files/directories
+			\item git clean -nfd   \# list all files/directories that would be removed
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{git cat-file}
+		\begin{itemize}
+			\item git cat-file -t    \# display type of the object
+			\item git cat-file -p    \# display content of the object
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\includegraphics[height=250px,width=300px]{git-blobs.jpg}
+\end{frame}
+
+\begin{frame}
+	\includegraphics[height=250px,width=300px]{commit-graph.png}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LAST FRAME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\transboxin
-\MyLogo
-\vspace{1.0cm}
-\begin{beamercolorbox}[sep=1.0cm, center, shadow=false, rounded=true]{postit2}
-\begin{Huge}Many Thanks\end{Huge}
-\end{beamercolorbox}
+	\transboxin
+	\MyLogo
+	\vspace{1.0cm}
+	\begin{beamercolorbox}[sep=1.0cm, center, shadow=false, rounded=true]{postit2}
+		\begin{Huge}Many Thanks\end{Huge}
+	\end{beamercolorbox}
 \end{frame}
 
 \end{document}
